@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Me</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *, *::before, *::after{
+  box-sizing: border-box;
+}
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+  body:hover{
+    background-color: grey;
+  }
+  .head {
+    background:#d6c0b8;
+    width: 290px;
+    height: 300px;
+    border-radius: 70% 70% 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .eyes, .brows, .hands{
+  position: absolute;
+  width: 195px;
+  display:flex;
+  justify-content: space-between;
+  }
+  .eye{
+    background-color: white;
+    height: 40px;
+    width: 80px;
+    border-radius: 100%;
+    border-top: 5px solid #C4A484;
+    border-bottom: 5px solid #C4A484;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 170px;
+    margin-left: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+  }
+  .eye::before{
+    content: '';
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    background-color: #7B3F00;
+    border-radius: 100%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-left: 25px;
+
+  }
+  .eye::after{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    background-color: black;
+    border-radius: 100%;
+     margin-top: 0px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    margin-left: 25px;
+  }
+
+ .eye:hover {
+  transition-duration: 0.4s;
+  height: 1px;
+  }
+  .brow{
+    width: 65px;
+    height: 32px;
+    border-top: 15px solid #6F4E37;
+    border-radius: 100%;
+    margin-top: 150px;
+    margin-left: 55px;
+    padding-right: 70px;
+  }
+  .nose{
+    position: absolute;
+    border: 4px solid #8B4000;
+    width: 40px;
+    height: 30px;
+    border-radius: 0 0 100% 100%;
+    border-top: none;
+    margin-top: 230px;
+    margin-left: 130px;
+  }
+  .mouth{
+    position: flex;
+    width: 100px;
+    height: 17px;
+    background: white;
+    margin-top: 270px;
+    margin-left: 100px;
+    border-radius: 0 0 100% 100%;
+    border-top:20px solid brown;
+    border-bottom: 10px solid brown;
+    border: 5px solid brown;
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 2px;}
+     .mouth:hover {
+  transition-duration: 0.4s;
+  height: 1px;
+  }
+    .left-ear {
+  border-radius: 30% 0 0 100%;
+  width: 25px;
+  height: 70px;
+  border: 2px solid #958b7d;
+  background: #d6c0b8;
+  margin-top:-125px; 
+  
+}
+   .hair-back{
+    position: absolute;
+    width: 350px;
+    height: 650px;
+    margin-left: 5px;
+    margin-right: 50px;
+    background: #5C4033 ;
+    border-radius: 100px 100px 0 0;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -50%);
+    }
+    .hair{
+    position: absolute;
+    width: 300px;
+    height: 150px;
+    background-color: #5C4033 ;
+    margin-bottom: 200px;
+    border-radius: 70% 70% 30% 30%;
+    
+  }
+.neck{
+  height: 80px;
+  width: 120px;
+  background-color:#d6c0b8;
+  position: relative;
+  margin-top: 80px;
+  margin-left: 90px;
+  border-radius: 0% 0% 50% 50%;
+  border-top: 1px solid black;
+  z-index: -1;
+}
+.clothes{
+  position: flex;
+  width:400px;
+  height: 400px;
+  background-color: #D8BFD8 ;
+  position: absolute;
+  border-radius: 100% / 60% 60% 10% 10%;
+  margin-top: 30px;
+  margin-left: -50px;
+  z-index: -10;
+}
+.clothes:hover{
+background-color: white ;
+}
+    .hand{
+    width: 250px;
+    height: 100px;
+    border-top: 55px solid #d6c0b8 ;
+    border-radius: 100%;
+    margin-top: 70px;
+    margin-left: -220px;
+    padding-right: 500px;
+    z-index:-100;
+  }
+   .hand:hover {
+  transition-duration: 0.4s;
+  height: 1px;
+  }
+  </style>
+</head>
+<body class="bg-black">
+
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="hair-back">
+      <div class="head">
+        <div class="hair">
+          <div class="brows">
+            <div class="brow"></div>
+            <div class="brow"></div>
+          </div>
+          <div class="eyes">
+            <div class="eye"></div>
+            <div class="eye"></div>
+          </div>
+          <div class="nose"></div>
+          <div class="mouth"></div>
+          <div class="left-ear"></div>
+          <div class="neck"></div>
+        </div>
+      </div>
+      <div class="clothes"></div>
+      <div class="hands">
+        <div class="hand"></div>
+        <div class="hand"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
